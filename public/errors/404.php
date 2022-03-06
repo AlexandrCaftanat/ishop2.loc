@@ -20,7 +20,7 @@
     <i class="far fa-question-circle fa-spin"></i>
     <div class="err2">4</div>
     <div class="msg">Страница не существует или времено не работает вернитесь позже
-        <p>Вернуться на главную <a href="<?=PATH?>">home</a>
+        <p>Вернуться на главную <a href="<?=PATH;?>">home</a>
     </div>
 </div>
 <style type="text/css">
