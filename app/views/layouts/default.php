@@ -12,8 +12,15 @@
     <h1>Шаблон DEFAULT</h1>
 
     <?=$content?>
-    <?=$name?>
-    <?=$age?>
+
+<?php
+$logs = R::getDatabaseAdapter()
+    ->getDatabase()
+    ->getLogger();
+
+debug( $logs->grep( 'SELECT' ) );
+?>
+
 
 </body>
 </html>

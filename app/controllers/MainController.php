@@ -9,9 +9,14 @@ class MainController extends AppController {
 
     public function indexAction()
     {
+        $posts = \R::findAll('test');
+       // debug($posts);
 
         $this->setMeta(App::$app->getProperty('shop_name'), 'Описание', 'Ключивики');
-        $this->set(['name' => 'Александр', 'age' => 67]);
+        $age = 32;
+        $name = 'Александр';
+        $this->set(compact('name','age', 'posts'));
+
     }
 
 }
